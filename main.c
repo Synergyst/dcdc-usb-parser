@@ -16,7 +16,7 @@ int main(int argc, char *argv[]) {
   #define SRCHARRLEN sizeof(searchArray) / 100
 
   /* Open the command for reading. */
-  fp = popen("/usr/local/bin/dcdc-usb -a 2>&1", "r");
+  fp = popen("/usr/local/bin/dcdc-usb-portable -a 2>&1", "r");
   if (fp == NULL) {
     printf("Failed to run command\n" );
     exit(1);
